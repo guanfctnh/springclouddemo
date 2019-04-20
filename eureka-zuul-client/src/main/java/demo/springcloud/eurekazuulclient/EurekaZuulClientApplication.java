@@ -14,4 +14,5 @@ public class EurekaZuulClientApplication {
 		SpringApplication.run(EurekaZuulClientApplication.class, args);
 	}
 
+
 }
