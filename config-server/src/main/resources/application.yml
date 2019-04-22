@@ -3,10 +3,21 @@ spring:
   cloud:
     config:
       server:
-        native:
-          search-locations: classpath:/shared
-  profiles:
-    active: native
-  application: config-server
+        git:
+          uri: https://github.com/guanfctnh/springclouddemo
+          search-paths: respo
+          username: 1335022070@qq.com
+          password: gyc.com1
+      label: master
+#        native:
+#          search-locations: classpath:/shared
+#  profiles:
+#    active: native
+  application:
+    name: config-server
 server:
   port: 8769
+eureka:
+  client:
+    service-url:
+      defaultZone: http://peer1:8761/eureka/
