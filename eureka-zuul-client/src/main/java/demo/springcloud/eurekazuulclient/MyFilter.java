@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 
 import static org.springframework.cloud.netflix.zuul.filters.support.FilterConstants.PRE_TYPE;
 
-@Component
+//@Component
 public class MyFilter extends ZuulFilter {
     private static Logger logger = LoggerFactory.getLogger(MyFilter.class);
     @Override

@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
-@Component
+//@Component
 public class MyFallBackProvider implements ZuulFallbackProvider {
     @Override
     public String getRoute() {
